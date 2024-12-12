@@ -6,11 +6,11 @@ require 'iiif_s3/version'
 Gem::Specification.new do |spec|
   spec.name          = "iiif_s3"
   spec.version       = IiifS3::VERSION
-  spec.authors       = ["David Newbury"]
-  spec.email         = ["david.newbury@gmail.com"]
+  spec.authors       = ["David Newbury", "Lee Hunter"]
+  spec.email         = ["david.newbury@gmail.com", "whunter@vt.edu"]
   spec.summary       = "A generator for an IIIF level 0 compatible static server on Amazon S3."
   spec.description   = ""
-  spec.homepage      = "https://github.com/cmoa/iiif_s3"
+  spec.homepage      = "https://github.com/vt-digital-libraries-platform/iiif_s3"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -28,5 +28,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "simplecov", "~> 0.10"
 
   spec.add_runtime_dependency 'aws-sdk', '~> 3'
-  spec.add_runtime_dependency "mini_magick", ">= 4.8"
+  spec.add_runtime_dependency "mini_magick", "~> 4"
 end
