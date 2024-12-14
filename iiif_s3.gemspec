@@ -30,5 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "simplecov", "~> 0.10"
 
   spec.add_runtime_dependency 'aws-sdk', '~> 3'
-  spec.add_runtime_dependency "mini_magick", '<= 4.13.2'
+  spec.add_runtime_dependency "mini_magick", '= 4.13.2'
 end
