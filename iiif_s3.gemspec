@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = ""
   spec.homepage      = "https://github.com/vt-digital-libraries-platform/iiif_s3"
   spec.license       = "MIT"
+  spec.metadata['changelog_uri'] = 'https://github.com/vt-digital-libraries-platform/iiif_s3/releases'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -28,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "simplecov", "~> 0.10"
 
   spec.add_runtime_dependency 'aws-sdk', '~> 3'
-  spec.add_runtime_dependency "mini_magick", "~> 4"
+  spec.add_runtime_dependency "mini_magick", '~> 4', '<= 4.13.2'
 end
